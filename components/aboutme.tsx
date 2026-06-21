@@ -1,4 +1,44 @@
+import {
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiMongodb,
+  SiPostgresql,
+  SiPrisma,
+  SiAppwrite,
+  SiClerk,
+  SiExpress,
+  SiThreedotjs,
+  SiGreensock,
+} from "react-icons/si";
+
 export default function About() {
+  const techStack = [
+    { name: "Java", icon: <FaJava /> },
+    { name: "HTML", icon: <FaHtml5 /> },
+    { name: "CSS", icon: <FaCss3Alt /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "GSAP", icon: <SiGreensock /> },
+    { name: "Three.js", icon: <SiThreedotjs /> },
+    { name: "Lenis", icon: "⚡" },
+    { name: "React.js", icon: <FaReact /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Express.js", icon: <SiExpress /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "Prisma", icon: <SiPrisma /> },
+    { name: "Appwrite", icon: <SiAppwrite /> },
+    { name: "Clerk", icon: <SiClerk /> },
+  ];
+
   return (
     <div className="w-full min-h-screen bg-black relative z-50 flex flex-col items-center justify-center py-16 px-4">
 
@@ -25,29 +65,15 @@ export default function About() {
 
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 sm:gap-3 w-full md:w-4/5 lg:w-2/3 items-center justify-center mt-10 px-2">
-        {[
-          "Java",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "GSAP",
-          "Three.js",
-          "Lenis",
-          "React.js",
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "Next.js",
-          "PostgreSQL",
-          "Prisma",
-          "Appwrite",
-          "Clerk",
-        ].map((tech) => (
+        {techStack.map((tech) => (
           <span
-            key={tech}
-            className="rounded-full border border-white font-mono px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
+            key={tech.name}
+            className="rounded-xl border border-white font-mono px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black cursor-pointer flex items-center gap-2"
           >
-            {tech}
+            <span className="text-sm sm:text-base">
+              {tech.icon}
+            </span>
+            {tech.name}
           </span>
         ))}
       </div>

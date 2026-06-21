@@ -6,6 +6,7 @@ import About from "@/components/aboutme";
 import Github from "@/components/github";
 import Project from "@/components/project";
 import Footer from "@/components/footer";
+// import Leetcode from "@/components/leetcode";
 
 export default function Home() {
   return (
@@ -31,18 +32,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="relative z-40 flex min-h-screen flex-col items-center justify-center px-4 text-white text-center">
-        <div className="font-bold">
-          <h1 className="oswald text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-            I BUILD THINGS
+        <div >
+          <h1 className="oswald font-bold uppercase leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            Full Stack Developer <br />
+            skilled in DSA & Java,
           </h1>
 
-          <h1 className="oswald text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-            THAT PEOPLE USE.
+          <h1 className="oswald  text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+            focused on building scalable products that solve real-world problems.
           </h1>
         </div>
 
         <p className="font-mono mt-4 text-xs sm:text-sm md:text-base px-4 max-w-2xl">
-          Full Stack Developer • Next.js • React • Node.js • JAVA
+          Full Stack Developer • DSA • Next.js • React • Node.js • JAVA
         </p>
 
         <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-6">
@@ -97,6 +99,7 @@ export default function Home() {
       <Github />
       <Project />
       <Footer />
+
     </div>
   );
 }
