@@ -15,7 +15,7 @@ export default function Navbar() {
         </button>
 
         <a
-          href="https://ik.imagekit.io/jwt52yyie/Bikesh-Resume.pdf?updatedAt=1780006626820"
+          href="https://ik.imagekit.io/jwt52yyie/Bikesh-Kumar-Resume-Final.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
