@@ -1,10 +1,10 @@
 import {
-  FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs,
+  FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaAws,
 } from "react-icons/fa";
 import {
   SiNextdotjs, SiMongodb, SiPostgresql, SiPrisma, SiAppwrite,
   SiClerk, SiExpress, SiThreedotjs, SiGreensock, SiTypescript,
-  SiDocker, SiAmazon,
+  SiDocker,
 } from "react-icons/si";
 
 const techStack = [
@@ -19,7 +19,7 @@ const techStack = [
   { name: "Prisma", icon: <SiPrisma /> },
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "Docker", icon: <SiDocker /> },
-  { name: "AWS", icon: <SiAmazon /> },
+  { name: "AWS", icon: <FaAws /> },
   { name: "HTML5", icon: <FaHtml5 /> },
   { name: "CSS3", icon: <FaCss3Alt /> },
   { name: "Appwrite", icon: <SiAppwrite /> },
