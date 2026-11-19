@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 
 const socials = [
   { label: "GitHub", href: "https://github.com/Bikesh-1", icon: "/github.svg" },
-  { label: "LeetCode", href: "https://leetcode.com/u/HcGc1iJwi5/", icon: "/leetcode.svg" },
+  { label: "LeetCode", href: "https://leetcode.com/u/Bikesh_sharma/", icon: "/leetcode.svg" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/bikesh-kumar07/", icon: "/linkedin.svg" },
 ];
 
@@ -40,21 +40,21 @@ export default function Home() {
       <section id="home" className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 pb-20 pt-32 text-center sm:px-8">
         <div className="mb-8 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 sm:text-xs">
           <span className="h-px w-8 bg-zinc-700" />
-          Full-Stack Developer · Java · DSA
+          Full-Stack Developer · Java · Data Structures & Algorithms
           <span className="h-px w-8 bg-zinc-700" />
         </div>
 
-        <h1 className="hero-title oswald max-w-[1400px] text-[clamp(3.3rem,10.2vw,9.5rem)] font-bold uppercase leading-[0.88] tracking-[-0.045em]">
-          <span className="block">Building Products.</span>
-          <span className="mt-2 block text-zinc-500">Solving Problems.</span>
+        <h1 className="hero-title oswald max-w-[1500px] text-[clamp(3.1rem,9.3vw,8.8rem)] font-bold uppercase leading-[0.9] tracking-[-0.045em]">
+          <span className="block">Building at Scale.</span>
+          <span className="mt-2 block text-zinc-500">Thinking in Algorithms.</span>
         </h1>
 
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
-          I build scalable digital products, solve challenging problems, and turn ideas into real-world experiences.
+          I&apos;m Bikesh — a full-stack developer building production-ready products used by 500+ users, with Java and DSA shaping how I approach engineering problems.
         </p>
 
         <div className="mt-7 flex flex-wrap items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-[0.13em] text-zinc-500 sm:gap-3 sm:text-xs">
-          {["Next.js", "React", "Node.js", "Java", "PostgreSQL"].map((skill, index) => (
+          {["Next.js", "React", "Node.js", "PostgreSQL", "Java", "DSA"].map((skill, index) => (
             <span key={skill} className="flex items-center gap-2">
               {index > 0 && <span className="text-zinc-700">/</span>}
               {skill}
@@ -66,8 +66,8 @@ export default function Home() {
           <Link href="#projects" className="group inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 font-mono text-xs font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-zinc-200">
             Explore my work <span className="transition-transform group-hover:translate-x-1">↗</span>
           </Link>
-          <a href="mailto:bikeshkumar07@gmail.com" className="rounded-full border border-white/20 px-6 py-3 font-mono text-xs text-white transition hover:border-white/60 hover:bg-white/5">
-            Get in touch
+          <a href="https://leetcode.com/u/Bikesh_sharma/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 px-6 py-3 font-mono text-xs text-white transition hover:border-white/60 hover:bg-white/5">
+            LeetCode profile ↗
           </a>
         </div>
 
@@ -90,6 +90,12 @@ export default function Home() {
               />
             </a>
           ))}
+        </div>
+
+        <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-5 text-center">
+          <div><p className="oswald text-2xl font-semibold sm:text-3xl">500+</p><p className="mt-1 font-mono text-[9px] uppercase tracking-wider text-zinc-500">Users reached</p></div>
+          <div><p className="oswald text-2xl font-semibold sm:text-3xl">4</p><p className="mt-1 font-mono text-[9px] uppercase tracking-wider text-zinc-500">Developers led</p></div>
+          <div><p className="oswald text-2xl font-semibold sm:text-3xl">IITD</p><p className="mt-1 font-mono text-[9px] uppercase tracking-wider text-zinc-500">Startup finalist</p></div>
         </div>
 
         <a href="#about" className="absolute bottom-7 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 font-mono text-[9px] uppercase tracking-[0.25em] text-zinc-600 transition hover:text-white">
