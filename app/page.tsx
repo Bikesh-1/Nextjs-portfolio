@@ -6,6 +6,7 @@ import DotField from "../components/DotField";
 import Navbar from "@/components/navbar";
 import About from "@/components/aboutme";
 import Github from "@/components/github";
+import LeetCode from "@/components/leetcode";
 import Project from "@/components/project";
 import Footer from "@/components/footer";
 
@@ -81,13 +82,7 @@ export default function Home() {
               aria-label={social.label}
               className="group grid h-14 w-14 place-items-center rounded-2xl border border-white/10 bg-white p-3 transition duration-300 hover:-translate-y-1 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 sm:h-16 sm:w-16"
             >
-              <Image
-                src={social.icon}
-                alt={social.label}
-                width={28}
-                height={28}
-                className="h-7 w-7 object-contain transition-transform duration-300 group-hover:scale-110"
-              />
+              <Image src={social.icon} alt={social.label} width={28} height={28} className="h-7 w-7 object-contain transition-transform duration-300 group-hover:scale-110" />
             </a>
           ))}
         </div>
@@ -106,6 +101,7 @@ export default function Home() {
       <div className="relative z-10">
         <div id="about" className="scroll-mt-24"><About /></div>
         <div id="github" className="scroll-mt-24"><Github /></div>
+        <div id="leetcode" className="scroll-mt-24"><LeetCode /></div>
         <div id="projects" className="scroll-mt-24"><Project /></div>
         <div id="contact" className="scroll-mt-24"><Footer /></div>
       </div>
