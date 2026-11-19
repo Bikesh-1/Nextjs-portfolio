@@ -74,8 +74,21 @@ export default function Home() {
 
         <div className="mt-12 flex items-center gap-3">
           {socials.map((social) => (
-            <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="group rounded-2xl border border-white/10 bg-white/[0.06] p-3 transition duration-300 hover:-translate-y-1 hover:border-white/40 hover:bg-white">
-              <Image src={social.icon} alt="" width={27} height={27} className="h-6 w-6 transition group-hover:invert sm:h-7 sm:w-7" />
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.label}
+              className="group grid h-14 w-14 place-items-center rounded-2xl border border-white/10 bg-white p-3 transition duration-300 hover:-translate-y-1 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 sm:h-16 sm:w-16"
+            >
+              <Image
+                src={social.icon}
+                alt={social.label}
+                width={28}
+                height={28}
+                className="h-7 w-7 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
             </a>
           ))}
         </div>
