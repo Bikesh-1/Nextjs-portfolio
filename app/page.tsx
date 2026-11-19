@@ -40,14 +40,13 @@ export default function Home() {
       <section id="home" className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 pb-20 pt-32 text-center sm:px-8">
         <div className="mb-8 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 sm:text-xs">
           <span className="h-px w-8 bg-zinc-700" />
-          Developer · Builder · Problem Solver
+          Full-Stack Developer · Java · DSA
           <span className="h-px w-8 bg-zinc-700" />
         </div>
 
         <h1 className="hero-title oswald max-w-[1400px] text-[clamp(3.3rem,10.2vw,9.5rem)] font-bold uppercase leading-[0.88] tracking-[-0.045em]">
-          <span className="block">Full Stack</span>
-          <span className="mt-2 block text-zinc-500">Developer</span>
-          <span className="mt-2 block">DSA <span className="text-zinc-600">&</span> Java</span>
+          <span className="block">Building Products.</span>
+          <span className="mt-2 block text-zinc-500">Solving Problems.</span>
         </h1>
 
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
