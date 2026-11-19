@@ -39,7 +39,7 @@ export default function About() {
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
         <div>
           <p className="text-2xl font-medium leading-relaxed tracking-tight text-zinc-200 sm:text-3xl">
-            I&apos;m Bikesh Kumar — a developer who enjoys turning complex ideas into <span className="text-zinc-500">useful, thoughtful digital products.</span>
+            I&apos;m Bikesh Kumar - a developer who enjoys turning complex ideas into <span className="text-zinc-500">useful, thoughtful digital products.</span>
           </p>
           <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-400">
             A Computer Science Engineering student, full-stack developer, and Tech Head at E-Cell SMVIT. I work across the stack, from shaping clean interfaces to building dependable backend systems. I enjoy exploring new technologies, solving problems with Java, and building products that make a real difference.
