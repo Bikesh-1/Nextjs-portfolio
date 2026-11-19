@@ -30,7 +30,7 @@ const projects = [
     number: "04",
     title: "E-Cell Recruitment",
     description: "A recruitment platform for E-Cell SMVIT that streamlines applications, registrations, and candidate management.",
-    image: "https://ik.imagekit.io/jwt52yyie/image2.png",
+    image: "/ecell-recruitment-preview.jpg",
     tech: ["React", "Tailwind", "Appwrite", "Clerk"],
     live: "https://www.ecellsmvit.in/recruitment",
     code: "#",
